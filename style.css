@@ -91,11 +91,12 @@ li a:hover{
 
 .image {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
-    gap: 50px;
+    align-items: center;
+    position: relative; /* لتحديد الموقع بالنسبة للصورة */
 }
-.image img{
+
+.image img {
     width: 60vh;
     height: auto;
     border-radius: 10px;
@@ -115,10 +116,28 @@ li a:hover{
     transform: translateY(0);
 }
 
-
 .image img:hover {
-    transform: scale(1.1);
+    filter: blur(2px) brightness(70%);
 }
+
+.image-overlay {
+position: absolute;
+top: 3vh;
+left: 2vh;
+z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0;
+    transition: all 0.9s ease;
+}
+
+.image:hover .image-overlay {
+    opacity: 1;
+}
+
+
 .end-text{
     padding: 15vh;
     font-size: 20px;
