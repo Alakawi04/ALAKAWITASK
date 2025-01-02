@@ -195,9 +195,9 @@ footer p {
     .hero-content {
         font-size: 14px;
     }
-    .image img{
-    width: 50vh;
-}
+    .image img {
+        width: 50vh;
+    }
 }
 
 @media screen and (max-width: 810px) {
@@ -207,7 +207,7 @@ footer p {
         width: 60%;
     }
     .hero-content {
-       display: none;
+        display: none;
     }
     .image-page {
         display: flex;
@@ -215,13 +215,57 @@ footer p {
         justify-content: center;
         gap: 50px;
     }
-    
     .image {
-margin-top: 8vh;
+        margin-top: 8vh;
         flex-wrap: wrap;
- 
     }
     .image img {
-        width:40vh;
+        width: 40vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .hero {
+        font-size: 18px;
+        margin: 30% auto 0 auto; 
+        width: 80%; 
+    }
+    .hero-content {
+        font-size: 12px; 
+    }
+    .image-page {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .image {
+        margin-top: 5vh; 
+        flex-wrap: wrap;
+        width: 90%; 
+    }
+    .image img {
+        width: 35vh;
+    }
+    .end-text h1 {
+        font-size: 16px; 
+        text-align: center;
+    }
+    .footer {
+        font-size: 12px;
+        text-align: center; 
+    }
+    .media ul {
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+    .media ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    .media ul li a {
+        font-size: 14px; 
     }
 }
